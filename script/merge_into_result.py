@@ -7,7 +7,7 @@ with open("result-korean-character.json", "r", encoding="UTF-8") as f:
     charactors_json = json.loads(f.read())
 
 
-for k, v in list(crawled_data.items())[48:]:
+for k, v in list(crawled_data.items()):
     if (
         input(
             f"Are you sure you want to overwrite that?\n\nkey: {k}\nvalue: {v}\n\n"
